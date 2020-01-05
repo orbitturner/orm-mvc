@@ -1,0 +1,23 @@
+ErrorDocument 404 /lpgl_projects/gestionVillepdo/src/view/errors/error404-mobile.php
+
+RewriteEngine On
+
+# Get Into Default Index :Login
+RewriteRule ^.{0}$ src/
+# Default Url To Login Page
+RewriteRule ^login$ src/index.php
+# Default Url To LogOut Page
+RewriteRule ^logout$ src/controller/userController.php?logout=1
+# =============|MENU URL MANAGING|=============
+# Main HomePage When User Logs In
+RewriteRule ^home$ src/view/mainindex.php?page=accueil
+# OPERATION Managing Page
+RewriteRule ^citymap$ src/view/mainindex.php?page=cityMap
+# New-Operation Page
+RewriteRule ^newoperation$ src/view/mainindex.php?page=newOperation
+# Account(COMPTE) Managing Page
+RewriteRule ^comptes$ src/view/mainindex.php?page=gCompte
+# New Account(COMPTE) Page
+RewriteRule ^newcompte$ src/view/mainindex.php?page=newAccount
+# Client Managing Page
+RewriteRule ^clients$ src/view/mainindex.php?page=gClient
