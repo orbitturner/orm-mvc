@@ -1,11 +1,25 @@
 <?php
+use Doctrine\ORM\Annotation as ORM;
+
+/**
+ * @Entity @Table(name="formation")
+ **/
     class Formation
     {
-        private $id;    
+        /** @Id @Column(type="integer") @GeneratedValue **/
+        private $id;
+        /** @Column(type="string") */    
         private $nom;
+        /** @Column(type="string") */    
         private $date;
-        private $lieu;
+        /** @Column(type="integer") */    
         private $duree;
+        /**
+         * Many formation have one lieu. This is the owning side.
+         * @ManyToOne(targetEntity="Lieu", inversedBy="formations")
+         * @JoinColumn(name="lieu_id", referencedColumnName="id")
+         */
+        private $lieu;
 
         
         //==============[ CONSTRUCTOR ]==============
