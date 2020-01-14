@@ -20,7 +20,7 @@
         //==============[ CONSTRUCTOR ]==============
         public function __construct()
         {
-            parent::__construct();
+            // parent::__construct();
             //Do your magic here
             $this->users = new ArrayCollection();
         }
