@@ -17,12 +17,12 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src/entit
 
 // database configuration parameters
 $conn = array(
+    'driver'     => 'pdo_mysql',
     'dbname'     => 'samanemvcorm',  
     'user'       => 'root',  
     'password'   => '@Shadowtech1064997',  
     'host'       => '127.0.0.1',  
-    'driver'     => 'pdo_mysql',
-    'path' => __DIR__ . '/db.sqlite',
+    // 'path' => __DIR__ . '/db.sqlite',
 );
 // $conn = array(
 //     'driver' => 'pdo_mysql',
