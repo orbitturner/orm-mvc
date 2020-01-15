@@ -3,7 +3,7 @@ ErrorDocument 404 /lpgl_projects/gestionVillepdo/src/view/errors/error404-mobile
 RewriteEngine On
 
 # Get Into Default Index :Login
-RewriteRule ^.{0}$ src/
+#RewriteRule ^.{0}$ src/
 # Default Url To Login Page
 RewriteRule ^login$ src/index.php
 # Default Url To LogOut Page
