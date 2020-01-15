@@ -1,6 +1,5 @@
 <?php
-
-
+namespace libs\system;
 class BootStrap
 {
     
