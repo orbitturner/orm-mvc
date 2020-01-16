@@ -1,9 +1,12 @@
 ErrorDocument 404 /lpgl_projects/gestionVillepdo/src/view/errors/error404-mobile.php
 
 RewriteEngine On
-
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
 # Get Into Default Index :Login
 #RewriteRule ^.{0}$ src/
+# Get Into Default BootStrap URL Redefiner :
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
 # Default Url To Login Page
 RewriteRule ^login$ src/index.php
 # Default Url To LogOut Page

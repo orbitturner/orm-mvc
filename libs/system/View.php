@@ -16,22 +16,22 @@ class View
 
         switch ($num) {
             case 1:
-                $file = "view/".$args[0].".php";
+                $file = "src/view/".$args[0].".php";
                 // File Testing
                 if (file_exists($file)) {
                     require_once $file;
                 }else {
-                    die("La | ".$file." | n'existe pas ou a était déplacé");
+                    die("La vue ▶| ".$file." |◀ n'existe pas ou a était déplacé.👀");
                 }
                 break;
             case 2:
-                $file = "view/".$args[0].".php";
+                $file = "src/view/".$args[0].".php";
                 // File Testing
                 if (file_exists($file)) {
                     $data = $args[1];
                     require_once $file;
                 }else {
-                    die("La | ".$file." | n'existe pas ou a était déplacé");
+                    die("La vue ▶| ".$file." |◀ n'existe pas ou a était déplacé.👀");
                 }
                 break;
         }

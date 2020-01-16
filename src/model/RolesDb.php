@@ -1,9 +1,12 @@
 <?php
-
-class RolesDb
+namespace src\model;
+use libs\system\Model;
+class RolesDb extends Model
 {
-    public function add(){
-        echo 2;
+    public function findAll(){
+        return $this->entityManager
+                    ->createQuery("SELECT r FROM Roles r")
+                    ->getResult();
     }
     
 }
