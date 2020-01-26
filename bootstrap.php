@@ -20,7 +20,7 @@ $conn = array(
     'driver'     => 'pdo_mysql',
     'dbname'     => 'samanemvcorm',  
     'user'       => 'root',  
-    'password'   => '@Shadowtech1064997',  
+    'password'   => '',  
     'host'       => '127.0.0.1',  
     // 'path' => __DIR__ . '/db.sqlite',
 );
