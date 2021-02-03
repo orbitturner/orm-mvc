@@ -8,7 +8,7 @@ class Model
 
     public function __construct()
     {
-        require_once "bootstrap.php";
+        require_once "./bootstrap.php";
         $this->entityManager = $entityManager;
     }
     
